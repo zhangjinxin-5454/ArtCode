@@ -2,6 +2,31 @@
 
 本文件记录 Art Code 的对外版本变化。格式参考 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)。
 
+## [1.0.2] — 2026-10-03
+
+### 修复
+
+- **战黑地图 3D 地球不再黑屏**：地球贴图原先从 unpkg CDN 在线拉取，网络侧对 unpkg 的 TLS 被
+  拦截（`ERR_CERT_COMMON_NAME_INVALID`）时贴图静默失败，只剩一颗黑球。贴图改为随包内置
+  （`earth-night.jpg` + `earth-topology.png`，与 three-globe 依赖同源），离线可用、不再依赖
+  外部 CDN。（「平面」瓦片图不受影响，仍走 ArcGIS 在线瓦片。）
+- **内嵌浏览器报错不再暴露框架内部串**：打开解析不了的地址时，错误页过去显示
+  `Error invoking remote method 'GUEST_VIEW_MANAGER_CALL': …` 这类 IPC 原文；现在抽出 net
+  错误码并翻译成人话（如「找不到该域名（DNS 解析失败）（ERR_NAME_NOT_RESOLVED -105）」「连接
+  被拒绝（端口没开或服务没起）（ERR_CONNECTION_REFUSED -102）」），常见失败
+  （DNS / 连接拒绝 / 超时 / 离线 / 连接重置）都有中文说明。
+- **证书失败恢复放行指引**：`loadURL` 被拒这条路径过去不回填 `loadErrorCode`，证书问题只会
+  落到通用错误页；现在会正确显示「该站点的 HTTPS 证书不受信任」并提供「设置 → 浏览器 → 安全
+  → 忽略证书校验」指引。
+- **`js/` 目录名派生的伪资产不再给「浏览器打开」入口**：工作台按 `js/{host}/` 约定收录资产，
+  按系统名建的目录（`js/uaa_xgpt/` 这类）不是域名，点「浏览器打开」会拼出 `https://uaa_xgpt/`
+  必然解析失败；现在这类行只给「非域名（js/ 目录名，不能打开）」提示，资产/资产详情与列表页
+  同步收口；清单里确实带 url 的资产不受影响。
+- **地址栏裸词当搜索词处理**：无协议且不是主机形态的输入（`baidu`、`sqlmap 教程`、中文查询）
+  过去被补成 `https://baidu` 直接 DNS 失败；现在与桌面浏览器一致——只有主机形态
+  （域名 / IP / localhost / 带端口 / 带路径）才补协议导航，其余按搜索词打开（地址栏占位与空态
+  提示同步更新）。
+
 ## [1.0.1] — 2026-10-03
 
 本版起对外公开发布（Windows x64）。
