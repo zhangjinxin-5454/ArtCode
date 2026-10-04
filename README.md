@@ -6,7 +6,7 @@
 
 从 ZCode 增强而来的本地优先 AI 工作台。会话、资产、报告、记忆全部存储在本机——发行方没有服务器，不收集、不留存你的数据。
 
-[![版本](https://img.shields.io/badge/release-v1.0.2-blue)](../../releases)
+[![版本](https://img.shields.io/badge/release-v1.0.3-blue)](../../releases)
 [![平台](https://img.shields.io/badge/platform-Windows%20x64-lightgrey)](../../releases)
 [![授权](https://img.shields.io/badge/license-机器码激活-orange)](../../releases)
 
@@ -73,9 +73,12 @@
 
 | 文件 | 说明 |
 | --- | --- |
-| `Art-Code-1.0.2-win-x64.exe` | Windows 64 位安装包（约 162 MB） |
+| `Art-Code-1.0.3-win-x64.exe` | Windows 64 位安装包（约 178 MB） |
 | `latest.yml` | 自动更新清单（升级必需） |
-| `Art-Code-1.0.2-win-x64.exe.blockmap` | 差分更新索引（升级必需） |
+| `Art-Code-1.0.3-win-x64.exe.blockmap` | 差分更新索引（升级必需） |
+
+> **系统要求**：Windows 10 21H2（版本 19044）或更高版本 / Windows 11。
+> 收不到自动更新（国内网络直连 GitHub 不稳）时，直接下载安装包**覆盖安装**即可，数据不受影响。
 
 > 三个文件**下载后放在同一个目录**，双击 exe 安装即可。
 > 装完在首屏可以改选「独立使用 / 与 ZCode 共生」，两个模式功能完全一致。
