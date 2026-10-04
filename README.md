@@ -12,6 +12,8 @@
 
 [下载安装包](../../releases/latest) · [使用教程](docs/使用教程.md) · [激活与授权](docs/激活与授权.md) · [常见问题](docs/常见问题.md)
 
+**闭源商业发行版** · 本仓库仅发布文档与安装包，源码暂不公开 · 基于 Apache-2.0 协议的 [ZCode](https://github.com/zai-org/ZCode) 二次开发
+
 </div>
 
 ---
