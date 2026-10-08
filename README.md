@@ -6,7 +6,7 @@
 
 从 ZCode 增强而来的本地优先 AI 工作台。会话、资产、报告、记忆全部存储在本机——发行方没有服务器，不收集、不留存你的数据。
 
-[![版本](https://img.shields.io/badge/release-v1.2.2-blue)](../../releases)
+[![版本](https://img.shields.io/badge/release-v1.3.0-blue)](../../releases)
 [![平台](https://img.shields.io/badge/platform-Windows%20x64-lightgrey)](../../releases)
 [![授权](https://img.shields.io/badge/license-机器码激活-orange)](../../releases)
 
@@ -38,10 +38,11 @@
 - **流程树** — 批量派发与执行进度可视化，支持无人值守续跑
 - **任务目录** — 把报告丢进目录就自动识别入库，零手工录入
 
-**内置技能资产**
+**内置技能资产（随包下发·需激活）**
 
-- 渗透测试全流程方法论与检查清单
-- 知识库卡片（按场景推荐打法）
+- `src-hunting` SRC 挖洞主入口 · `code-audit` 白盒审计 · `js-reverse` JS 逆向 · `android-reverse` 安卓逆向
+- `av-evasion` 免杀对抗 · `ctf`（+3 个子技能）· `poc-dev` PoC 产出 · `threat-modeling` 威胁建模
+- 知识库卡片（按场景推荐打法）+ 门禁判据脚本
 - **没有激活码用不了**：技能包随授权加密下发，未激活过的机器上**不解密、不落盘**；激活后自动解密启用
 
 </td><td width="50%">
@@ -73,9 +74,9 @@
 
 | 文件 | 说明 |
 | --- | --- |
-| `Art-Code-1.2.2-win-x64.exe` | Windows 64 位安装包（约 178 MB） |
+| `Art-Code-1.3.0-win-x64.exe` | Windows 64 位安装包（约 178 MB） |
 | `latest.yml` | 自动更新清单（升级必需） |
-| `Art-Code-1.2.2-win-x64.exe.blockmap` | 差分更新索引（升级必需） |
+| `Art-Code-1.3.0-win-x64.exe.blockmap` | 差分更新索引（升级必需） |
 
 > **系统要求**：Windows 10 21H2（版本 19044）或更高版本 / Windows 11。
 > 收不到自动更新（国内网络直连 GitHub 不稳）时，直接下载安装包**覆盖安装**即可，数据不受影响。
