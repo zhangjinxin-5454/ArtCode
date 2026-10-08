@@ -74,7 +74,7 @@
 
 | 文件 | 说明 |
 | --- | --- |
-| `Art-Code-1.3.0-win-x64.exe` | Windows 64 位安装包（约 178 MB） |
+| `Art-Code-1.3.0-win-x64.exe` | Windows 64 位安装包（约 183 MB） |
 | `latest.yml` | 自动更新清单（升级必需） |
 | `Art-Code-1.3.0-win-x64.exe.blockmap` | 差分更新索引（升级必需） |
 
