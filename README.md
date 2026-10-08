@@ -6,7 +6,7 @@
 
 从 ZCode 增强而来的本地优先 AI 工作台。会话、资产、报告、记忆全部存储在本机——发行方没有服务器，不收集、不留存你的数据。
 
-[![版本](https://img.shields.io/badge/release-v1.5.1-blue)](../../releases)
+[![版本](https://img.shields.io/badge/release-v1.5.2-blue)](../../releases)
 [![平台](https://img.shields.io/badge/platform-Windows%20x64-lightgrey)](../../releases)
 [![授权](https://img.shields.io/badge/license-机器码激活-orange)](../../releases)
 
@@ -42,6 +42,7 @@
 
 - `src-hunting` SRC 挖洞主入口 · `code-audit` 白盒审计 · `js-reverse` JS 逆向 · `android-reverse` 安卓逆向
 - `av-evasion` 免杀对抗 · `ctf`（+3 个子技能）· `poc-dev` PoC 产出 · `threat-modeling` 威胁建模
+- `tscanplus` TscanPlus(无影) MCP 作战手册（端口/指纹/POC/弱口令/目录/JS/子域名/空间测绘；**需自备 TscanPlus**）
 - 知识库卡片（按场景推荐打法）+ 门禁判据脚本
 - **没有激活码用不了**：技能包随授权加密下发，未激活过的机器上**不解密、不落盘**；激活后自动解密启用
 
@@ -74,9 +75,9 @@
 
 | 文件 | 说明 |
 | --- | --- |
-| `Art-Code-1.5.1-win-x64.exe` | Windows 64 位安装包（约 183 MB） |
+| `Art-Code-1.5.2-win-x64.exe` | Windows 64 位安装包（约 183 MB） |
 | `latest.yml` | 自动更新清单（升级必需） |
-| `Art-Code-1.5.1-win-x64.exe.blockmap` | 差分更新索引（升级必需） |
+| `Art-Code-1.5.2-win-x64.exe.blockmap` | 差分更新索引（升级必需） |
 
 > **系统要求**：Windows 10 21H2（版本 19044）或更高版本 / Windows 11。
 > 收不到自动更新（国内网络直连 GitHub 不稳）时，直接下载安装包**覆盖安装**即可，数据不受影响。
